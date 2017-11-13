@@ -1,0 +1,11 @@
+<ul class="list-inline text-center">
+  <% ["hugopochart", "huangd973"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "imagebuddy" %>
+      <h5><%= gh_username.capitalize %></h5>
+      <% link_to "https://github.com/#{gh_username}", target: "_blank" do %>
+              <i class="fa fa-github"></i> <%= gh_username %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
